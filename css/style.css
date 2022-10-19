@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --softblue:hsl(231, 69%, 60%);
+    --softred: hsl(0, 94%, 66%);
+    --grey: hsl(229, 8%, 60%);
+    --darkblue: hsl(229, 31%, 21%);
+    --white: rgb(255, 255, 255);
+}
