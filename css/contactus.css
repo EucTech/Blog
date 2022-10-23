@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --softblue:hsl(231, 69%, 60%);
+    --softred: hsl(0, 94%, 66%);
+    --grey: hsl(229, 8%, 60%);
+    --darkblue: hsl(229, 31%, 21%);
+    --white: rgb(255, 255, 255);
+    --lightgreen: rgb(91, 172, 131);
+}
+
+.contacthead{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 40px 100px;
+
+}
+
+.contact1{
+    text-align: center;
+    background-color: rgba(108, 109, 141, 0.13);
+    padding:100px;
+    width: 40%;
+    height: 50%;
+}
+
+.contact1 h1{
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color: var(--darkblue);
+}
+
+.contact1 h2:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: var(--darkblue);
+}
+
+.contact1 h2:nth-of-type(2) {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: var(--darkblue);
+}
+
+.form{
+    background-color: rgba(108, 109, 141, 0.13);
+    padding: 100px;
+    margin: 20px auto;
+}
+
+.form p:nth-of-type(1){
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: var(--softblue);
+}
+
+
+.form p:nth-of-type(2){
+    font-size: 16px;
+    padding: 20px 0 10px;
+    color: var(--softblue);
+}
+
+.email{
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--softblue);
+    border-radius: 5px;
+    outline: none;
+    padding-left: 16px;
+    color: var(--darkblue);
+}
+
+.text{
+    width: 21rem;
+    height: 10rem;
+    outline: none;
+    border: 1px solid var(--softblue);
+    border-radius: 5px;
+    padding-left: 16px;
+}
+
+.submit{
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--softblue);
+    border-radius: 5px;
+    outline: none;
+    padding-left: 16px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--darkblue);
+    font-weight: 600;
+}
+
+.submit:hover{
+    background-color: var(--grey);
+    color: var(--white);
+    border: transparent;
+}

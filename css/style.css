@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body{
+    overflow-x: hidden;
 }
 
 a{
@@ -15,4 +19,308 @@ a{
     --grey: hsl(229, 8%, 60%);
     --darkblue: hsl(229, 31%, 21%);
     --white: rgb(255, 255, 255);
+    --lightgray: hsl(230, 27%, 96%);
 }
+
+.slick-dots{
+    width: 75%;
+}
+
+#nav{
+    background-color: var(--darkblue);
+}
+
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    padding: 30px 100px 20px;
+}
+
+.main-navbar img{
+    width: 100px;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.navlinks a{
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navlinks a:hover{
+    color: var(--softblue);
+}
+
+.log { 
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.log a{
+    background-color: var(--white);
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: var(--softred);
+    border: 1px solid transparent;
+}
+
+.log a:hover{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+#main-hero h2{
+    color: var(--grey);
+    padding: 40px 80px 10px 80px;
+}
+
+.hero{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 40px;
+    padding: 40px 80px 10px 80px ;
+}
+
+.hero div{
+    width: 100%;
+    /* height: 80%; */
+    /* margin: 0 2rem; */
+}
+
+.hero div img{
+    width: 90%;
+    /* height: 100%; */
+    padding-bottom: 20px;
+}
+
+.hero a{
+    color: var(--softblue);
+}
+
+.hero a:hover{
+    color: var(--softred);
+}
+
+.hero div p{
+    color: var(--darkblue);
+}
+
+.hero div p:hover{
+    color: var(--softred);
+}
+
+h4{
+    padding-bottom: 15px;
+}
+
+.tech-main{
+    display: flex;
+    background-color: var(--lightgray);
+    padding: 100px 80px 40px 100px;
+    margin-top: 80px;
+}
+
+.tech1{
+    width: 55%;
+    border-bottom: 1px solid var(--softblue);
+    padding-bottom: 10px;
+}
+
+.tech1 img{
+    width: 50%;
+    padding: 20px 0;
+}
+
+.tech1 h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--darkblue);
+    padding-bottom: 20px;
+    
+}
+
+.tech1 p{
+    font-size: 16px;
+    /* padding-bottom: 20px; */
+    color: var(--darkblue);
+    line-height: 1.5;
+}
+
+.ict{
+    font-size: 28px;
+}
+
+.author{
+    margin-top: 20px;
+}
+
+.author, .author div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.author div p, h5{
+    color: var(--grey);
+}
+
+.author p{
+    color: var(--grey);
+}
+
+.ca{
+    font-size: 18px;
+    color: var(--darkblue);
+    border-radius: 4px;
+    border: 1px solid var(--softblue); 
+    width: 40%;
+    height: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.ca h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--darkblue);
+}
+
+.ca a{
+    font-size: 16px;
+    color: var(--softblue);
+    line-height: 1.5;
+    display: block;
+}
+
+.ca a:nth-of-type(4){
+    margin-bottom: 20px;
+}
+
+.ca1{
+    padding-bottom: 20px;
+}
+
+.au{
+    padding-top: 20px;
+    border-top: 1px solid var(--darkblue);
+}
+
+.main-footer{
+    background-color: var(--softblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.icons, .lastone1{
+    display: flex;
+    gap: 10px;
+}
+
+.icons a{
+    color: var(--white);
+    font-size: 25px;
+}
+
+.icons a:hover{
+    color: var(--softred);
+}
+
+
+.lastone1 a{
+    color: var(--white);
+}
+
+.lastone1 a:hover{
+    color: var(--softred);
+}
+
+.allright p{
+    font-size: 14px;
+    color: var(--darkblue);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+.tech-main{
+    padding: 100px 30px 40px;
+}
+
+.ca{
+    width: 60%;
+}
+
+}
+
+
+@media screen and (max-width: 992px) {
+.main-navbar{
+    padding: 20px;
+}
+
+.tech1{
+    width: 70%;
+} 
+
+.ca{
+    width: 80%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+.navlinks{
+    gap: 15px;
+}
+
+.main-navbar{
+    gap: 30px;
+}
+
+.log{
+    gap: 15px;
+}
+
+.tech1{
+    width: 80%;
+}
+
+}
+
+@media screen and (max-width: 576px) {
+.ca{
+    display: none;
+}
+
+.tech-main{
+    text-align: center;
+    margin-top: 40px;
+    padding: 40px 15px 40px;
+}
+
+.tech1{
+    width: 100%;
+}
+.tech1 img{
+    width: 70%;
+}
+    
+}
+
+

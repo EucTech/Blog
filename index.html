@@ -6,27 +6,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- AOS animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+    <!-- icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
     
     <!-- css style -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <section id="nav">
-        <div>
-
-            <div>
+        <div class="main-navbar">
+            <a href="/"><img src="/image/euclogo (1).png" alt=""></a>
+            <div class="navlinks">
                 <a href="/">HOME</a>
                 <a href="/aboutus.html">ABOUT</a>
                 <a href="/contactus.html">CONTACT</a>
-                <a href="/login.html">LOGIN</a>
-                <a href="/signup.html">SIGN UP</a>
-
+                
+                <div class="log">
+                    <a href="/login.html">LOGIN</a>
+                    <a href="/signup.html">SIGN UP</a>
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="main-hero">
+        <h2>Trending News</h2>
+        <div class="hero" data-aos="fade-up" data-aos-duration="600">
+            <div>
+                <img src="/image/Air.jpg" alt="">
+                <a href="#"><h4>Air Peace flight to china </h4></a>
+                <a href="#"><p>Kingsley Mark</p></a>
+            </div>
+
+            <div>
+                <img src="/image/car.jpg" alt="">
+                <a href="#"><h4>The most expensive car in 2022</h4></a>
+                <a href="#"><p>Kingsley Mark</p></a>
+            </div>
+
+            <div>
+                <img src="/image/crypto.jpg" alt="" height="40%">
+                <a href="#"><h4>crypto currency rate in 2022 </h4></a>
+                <a href="#"><p>Kingsley Mark</p></a>
+            </div>
+
+            <div>
+                <img src="/image/doctor.jpg" alt="">
+                <a href="#"><h4>The first doctor to cure covid 19 </h4></a>
+                <a href="#"><p>Kingsley Mark</p></a>
+            </div>
+
+            <div>
+                <img src="/image/dollar.jpg" alt="">
+                <a href="#"><h4>Dollar rate in 2022 </h4></a>
+                <a href="#"><p>Kingsley Mark</p></a>
+            </div>
+
+            <div>
+                <img src="/image/footballer.jpg" alt="">
+                <a href="#"><h4>The best footballer in 2022 </h4></a>
+                <a href="#"><p>Kingsley Mark</p></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech">
+        <div class="tech-main">
+            <div>
+                <h1 class="ict">Ict news</h1>
+                <div class="tech1">
+                    <a href="#"><img src="/image/Ai.jpg" alt=""></a>
+                    <h1>Artificial Intelligence</h1>
+                    <p>Artificial Intelligence, also known as AI, started gaining popularity a decade ago. It has still not slowed down and continues to be one of the leading technologies in 2021. AI is constantly evolving, and newer applications for this technology continue to spring upon the scene. Today’s most popular AI applications are image and speech recognition, navigation programs, voice assistants like Siri and Alexa, and much more.</p>
+                    <div class="author">
+                        <div>
+                            <h5>Author: Jack King </h5>
+                            <p>Comments:3</p>
+                        </div>
+                        <p>10/12/2022</p>
+                    </div>
+                </div>
+
+                <div class="tech1">
+                    <a href="#"><img src="/image/blockchain.jpg" alt=""></a>
+                    <h1>Blockchain</h1>
+                    <p>Blockchain was popularised in the context of cryptocurrency and Bitcoin and the security it provides. However, it offers security that can be useful in several other ways as well. Blockchain can be defined as data that you can only add to, not take away or alter. It results in many sections of data which form a ‘chain’, hence the name Blockchain.</p>
+                    <div class="author">
+                        <div>
+                            <h5>Author: Jack King </h5>
+                            <p>Comments:3</p>
+                        </div>
+                        <p>10/12/2022</p>
+                    </div>
+                </div>
+
+                <div class="tech1">
+                    <a href="#"><img src="/image/iot.jpg" alt=""></a>
+                    <h1>Internet of Things (IoT)</h1>
+                    <p>It is one of the most promising technologies of the decade. Multiple devices or ‘things’ today are wifi-enabled, which means they can be connected to the internet. The Internet of Things is a network of diverse connected devices. Devices within the network can communicate with each other, collect data and transfer it across the network without human intervention.</p>
+                    <div class="author">
+                        <div>
+                            <h5>Author: Jack King </h5>
+                            <p>Comments:3</p>
+                        </div>
+                        <p>10/12/2022</p>
+                    </div>
+                </div>
+
+                <div class="tech1">
+                    <a href="#"><img src="/image/cyber-security-strategy.jpeg" alt=""></a>
+                    <h1>Cybersecurity</h1>
+                    <p>Since the dawn of computers, cybersecurity has played a major role in ensuring safer user experiences. It is not a new trend, but given that technology is evolving rapidly, cybersecurity measures need to be constantly upgraded and improved. Threats and hacking attempts are growing in number and intensity, which calls for improving security protocols and strengthening systems against malicious attacks.</p>
+                    <div class="author">
+                       <div>
+                        <h5>Author: Jack King </h5>
+                        <p>Comments:3</p>
+                       </div>
+                       <p>10/12/2022</p>
+                    </div>
+                </div>
+
+                <div class="tech1">
+                    <a href="#"><img src="/image/Robotic-Process-Automation.jpeg" alt=""></a>
+                    <h1>Robotic Process Automation</h1>
+                    <p>Robotic Process Automation (RPA) uses multiple software and applications to automate business processes such as data collection and analysis, customer service and other repetitive tasks managed previously through manual processes.</p>
+                    <div class="author">
+                        <div>
+                            <h5>Author: Jack King </h5>
+                            <p>Comments:3</p>
+                        </div>
+                        <p>10/12/2022</p>
+                    </div>
+                </div>
+
+                <div class="tech1">
+                    <a href="#"><img src="/image/Edge-computing.png" alt=""></a>
+                    <h1>Edge Computing</h1>
+                    <p>Today, millions of data points are collecting user information from various sources such as social media, websites, emails, and web searches. As the amount of data collected increases exponentially, other technologies like cloud computing fall short in several situations.</p>
+                    <div class="author">
+                        <div>
+                            <h5>Author: Jack King </h5>
+                            <p>Comments:3</p>
+                        </div>
+                        <p>10/12/2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ca">
+                <h4>Categories</h4>
+                <a href="#">Skyler</a>
+                <a href="#">Jesse</a>
+                <a href="#">Mike</a>
+                <a href="#">Holly</a>
+                
+                <h4 class="au">Authors</h4>
+                <a href="#">Skyler</a>
+                <a href="#">Jesse></a>
+                <a href="#">Mike</a>
+                <a href="#">Holly</a>
+            </div>
+        </div> 
+    </section>
+
+    <section id="footer">
+        <div class="main-footer">
+            <div class="icons">
+                <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-pinterest-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+            </div>
+
+            <div class="lastone1">
+                <a href="/">HOME</a>
+                <a href="/aboutus.html">ABOUT</a>
+                <a href="/contactus.html">CONTACT</a>
+            </div>
+
+            <div class="allright">
+                <p>copyright 2020. All Rights Reserved</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
