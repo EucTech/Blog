@@ -116,14 +116,46 @@ a{
     color: var(--softblue);
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 1200px) {
+    .sign1{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sign1{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .sign1{
         width: 60%;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 576px) {
     .sign1{
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sign1{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .sign1{
+        width: 90%;
+    }
+
+    .email, .password{
+        height: 8%;
+    }
+
+    .signbtn{
+        height: 8%;
     }
 }

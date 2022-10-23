@@ -23,7 +23,7 @@ a{
 }
 
 .slick-dots{
-    width: 75%;
+    width: 80%;
 }
 
 #nav{
@@ -304,6 +304,7 @@ h4{
 }
 
 @media screen and (max-width: 576px) {
+
 .ca{
     display: none;
 }
@@ -322,5 +323,18 @@ h4{
 }
     
 }
+
+@media screen and (max-width: 480px) {
+
+.hero div img{
+    width: 120%;
+}
+
+.slick-dots{
+    width: 65%;
+}
+
+}
+
 
 

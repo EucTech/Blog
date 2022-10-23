@@ -1,3 +1,6 @@
+
+
+
 $('.hero').slick({
     dots: true,
     infinite: true,
@@ -40,6 +43,7 @@ $('.hero').slick({
       // instead of a settings object
     ]
   });
+  
 
 AOS.init();
 

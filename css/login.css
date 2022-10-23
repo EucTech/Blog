@@ -129,14 +129,47 @@ a{
     color: var(--softblue);
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 1200px) {
+    .login1{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .login1{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .login1{
         width: 60%;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 576px) {
     .login1{
         width: 80%;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .login1{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .login1{
+        width: 90%;
+    }
+
+    .email, .password{
+        height: 8%;
+    }
+
+    .loginbtn{
+        height: 8%;
+    }
+}
+
