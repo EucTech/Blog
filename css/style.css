@@ -13,6 +13,24 @@ a{
     text-decoration: none;
 }
 
+.navToggle{
+    display: none;
+}
+
+.open{
+    filter:invert(1) sepia(1) saturate(1) brightness(200);
+    width: 90% !important;
+}
+
+.close{
+    filter:invert(1) sepia(1) saturate(1) brightness(200);
+    width: 90% !important;
+}
+
+.navlinks .ca{
+    display: none;
+}
+
 :root{
     --softblue:hsl(231, 69%, 60%);
     --softred: hsl(0, 94%, 66%);
@@ -309,6 +327,13 @@ h4{
     display: none;
 }
 
+.navlinks .ca{
+    display: block;
+    width: 40%;
+    height: 70%;
+    margin-bottom: 20px;
+}
+
 .tech-main{
     text-align: center;
     margin-top: 40px;
@@ -321,6 +346,46 @@ h4{
 .tech1 img{
     width: 70%;
 }
+
+.navToggle{
+    display: block;
+}
+
+.navToggle, .close{
+    display: none;
+}
+
+.navlinks{
+    position: fixed;
+    left: 50%;
+    top: -120%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px 0;
+    flex-direction: column;
+    background-color: rgba(145, 148, 160, 0.925);
+    transition: .5s;
+    z-index: 999;
+    justify-content: flex-start;
+    gap: 20px;       
+}
+
+.log a{
+    color: var(--softred) !important;
+}
+
+.log a:hover{
+    color: var(--white) !important;
+}
+
+.navlinks a{
+    color: var(--white);
+}
+
+
+
     
 }
 
