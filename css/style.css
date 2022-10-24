@@ -335,7 +335,6 @@ h4{
 }
 
 .tech-main{
-    text-align: center;
     margin-top: 40px;
     padding: 40px 15px 40px;
 }
@@ -351,7 +350,7 @@ h4{
     display: block;
 }
 
-.navToggle, .close{
+.close{
     display: none;
 }
 
