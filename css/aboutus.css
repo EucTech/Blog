@@ -21,21 +21,21 @@ html, body{
     --white: rgb(255, 255, 255);
 }
 
-.bg1{
-    position: absolute;
-    z-index: -1;
-    top: 40%;
-    right: 20%;
-    width: 60%;
-}
-
 #about{
-    height: 500px;
-    margin-top: 80px;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(/image/background.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .about1{
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 60%;
     margin: 0 auto;
     padding: 160px 100px;
@@ -43,16 +43,16 @@ html, body{
 }
 
 .about1 h1{
-    font-size: 50px;
+    font-size:60px;
     font-weight: 600;
     padding-bottom: 20px;
     color: var(--white);
 }
 
 .aboutp{
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.5;
     color: var(--white);
-    background-color:rgba(82, 153, 82, 0.74);
 }
 
 .mission{
@@ -74,12 +74,130 @@ html, body{
 }
 
 
+.navToggle{
+    display: none;
+}
 
-@media screen and (max-width: 1200px) {
-    /* .bg1{
-        top: 40%;
-    } */
+.open{
+    filter:invert(1) sepia(1) saturate(1) brightness(200);
+    width: 90% !important;
+}
+
+.close{
+    filter:invert(1) sepia(1) saturate(1) brightness(200);
+    width: 90% !important;
+}
+
+.navHeader img{
+    display: none;
+} 
+
+.navlinks .ca{
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+.about1 {
+    width: 70%;
+}
+
+.mission{
+    width: 60%;
+}
 
 
 }
+
+@media screen and (max-width: 768px) {
+.about1 {
+    width: 90%;
+}
+
+.about1 h1{
+    font-size: 50px;
+}
+
+
+}
+
+
+@media screen and (max-width: 576px) {
+.about1 {
+    width: 100%;
+    padding: 160px 60px;
+}
+
+.mission{
+    width: 80%;
+}
+
+.navHeader img{
+    display: block;
+}
+
+
+.navHeader{
+    display: flex;
+    gap: 160px;
+}
+
+.navToggle{
+    display: block;
+}
+
+.close{
+    display: none;
+}
+
+.navlinks{
+    position: fixed;
+    left: 50%;
+    top: -120%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px 0;
+    flex-direction: column;
+    background-color: rgb(96, 96, 105);
+    transition: .5s;
+    z-index: 999;
+    justify-content: flex-start;
+    gap: 20px;       
+}
+
+.log a{
+    color: var(--softred) !important;
+}
+
+.log a:hover{
+    color: var(--white) !important;
+}
+
+.navlinks a{
+    color: var(--white);
+}
+
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+    .about1 {
+        padding: 160px 15px;
+    }
+    
+    .mission{
+        width: 90%;
+    }
+    
+    }    
+      
+    
 

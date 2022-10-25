@@ -29,7 +29,17 @@
     <section id="nav">
         <div class="main-navbar">
             <a href="/"><img src="/image/euclogo (1).png" alt=""></a>
+
+            <div class="navToggle">
+                <img src="/image/icon-hamburger.svg" alt="" class="open" onclick="navopen()">
+                
+            </div>
+
             <div class="navlinks">
+                <div class="navHeader">
+                    <a href="/"><img src="/image/euclogo (1).png" alt=""></a>
+                    <img src="/image/icon-close.svg" alt="" class="close" onclick="navclose()">
+                </div>
                 <a href="/">HOME</a>
                 <a href="/aboutus.html">ABOUT</a>
                 <a href="/contactus.html">CONTACT</a>
@@ -38,18 +48,27 @@
                     <a href="/login.html">LOGIN</a>
                     <a href="/signup.html">SIGN UP</a>
                 </div>
+
+                <div class="ca">
+                    <h4>Categories</h4>
+                    <a href="#">Skyler</a>
+                    <a href="#">Jesse</a>
+                    <a href="#">Mike</a>
+                    <a href="#">Holly</a>
+                    
+                    <h4 class="au">Authors</h4>
+                    <a href="#">Skyler</a>
+                    <a href="#">Jesse></a>
+                    <a href="#">Mike</a>
+                    <a href="#">Holly</a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="about">
-        
-
-        <div data-aos="fade-up" data-aos-duration="600">
-            <img class="bg1" src="/image/background.jpg" alt="">
-        </div>
         <div class="about1">
-            <div data-aos="zoom-in-up" data-aos-duration="800">
+            <div data-aos="flip-left" data-aos-duration="800">
                 <h1>ABOUT US</h1>
             </div>
             <div class="aboutp" data-aos="fade-up-right" data-aos-duration="1000">
@@ -88,10 +107,9 @@
         </div>
     </section>
     
+    <script src="/js/jquery.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>

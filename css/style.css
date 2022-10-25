@@ -27,6 +27,10 @@ a{
     width: 90% !important;
 }
 
+.navHeader img{
+    display: none;
+} 
+
 .navlinks .ca{
     display: none;
 }
@@ -342,8 +346,27 @@ h4{
 .tech1{
     width: 100%;
 }
+
+.tech1 p:nth-of-type(1){
+    overflow: hidden;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
 .tech1 img{
     width: 70%;
+}
+
+.navHeader img{
+    display: block;
+}
+
+.navHeader{
+    display: flex;
+    gap: 160px;
 }
 
 .navToggle{
@@ -353,6 +376,16 @@ h4{
 .close{
     display: none;
 }
+
+.navlinks .ca{
+    width: 80%;
+}
+
+.navlinks .ca a{
+    font-size: 18px;
+}
+
+
 
 .navlinks{
     position: fixed;
@@ -364,7 +397,7 @@ h4{
     height: 100vh;
     padding: 30px 0;
     flex-direction: column;
-    background-color: rgba(145, 148, 160, 0.925);
+    background-color: rgb(96, 96, 105);
     transition: .5s;
     z-index: 999;
     justify-content: flex-start;

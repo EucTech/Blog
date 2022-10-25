@@ -1,6 +1,3 @@
-
-
-
 $('.hero').slick({
     dots: true,
     infinite: true,
